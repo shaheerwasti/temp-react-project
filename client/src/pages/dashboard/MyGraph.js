@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom'
-import img from '../assets/images/not-found.svg'
-import Wrapper from '../assets/wrappers/ErrorPage'
-import { BarChart } from 'recharts'
-import { StatsContainer, Loading, ChartsContainer } from '../components'
-import { useAppContext } from '../context/appContext'
+import { StatsContainer, Loading, ChartsContainer } from '../../components'
+import { useAppContext } from '../../context/appContext'
 import { useEffect } from 'react'
+import Wrapper from '../../assets/wrappers/DashboardFormPage'
 const MyGraph = () => {
 
     const { graphData, rawData, isLoading, monthlyApplications } = useAppContext()
@@ -14,7 +12,9 @@ const MyGraph = () => {
         //rawData()
         // eslint-disable-next-line
     }, [])
-
+    if (isLoading) {
+        return <Loading center />
+    }
 
 
     return (

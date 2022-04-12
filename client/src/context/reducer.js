@@ -25,6 +25,8 @@ import {
   SHOW_STATS_SUCCESS,
   CLEAR_FILTERS,
   CHANGE_PAGE,
+  SHOW_GRAPH_BEGIN,
+  SHOW_GRAPH_SUCCESS,
 } from './actions'
 
 import { initialState } from './appContext'
@@ -218,6 +220,21 @@ const reducer = (state, action) => {
     }
   }
   if (action.type === SHOW_STATS_SUCCESS) {
+    return {
+      ...state,
+      isLoading: false,
+      stats: action.payload.stats,
+      monthlyApplications: action.payload.monthlyApplications,
+    }
+  }
+  if (action.type === SHOW_GRAPH_BEGIN) {
+    return {
+      ...state,
+      isLoading: true,
+      showAlert: false,
+    }
+  }
+  if (action.type === SHOW_GRAPH_SUCCESS) {
     return {
       ...state,
       isLoading: false,

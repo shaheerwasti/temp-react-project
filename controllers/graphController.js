@@ -17,8 +17,6 @@ const GSSD = async (req, res) => {
 }
 
 const dataDrilling = async (req, res) => {
-
-    console.log(new Date(2022, 3, 24));
     const rawData = await Number.aggregate([
         {
             '$match': {

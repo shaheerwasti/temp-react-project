@@ -29,6 +29,8 @@ import {
   SHOW_STATS_SUCCESS,
   CLEAR_FILTERS,
   CHANGE_PAGE,
+  SHOW_GRAPH_BEGIN,
+  SHOW_GRAPH_SUCCESS,
 } from './actions'
 
 const token = localStorage.getItem('token')
@@ -340,13 +342,13 @@ const AppProvider = ({ children }) => {
   }
 
   const rawData = async (req, res) => {
-    dispatch({ type: SHOW_STATS_BEGIN })
+    dispatch({ type: SHOW_GRAPH_BEGIN })
     try {
       //const { data } = await authFetch('/jobs/stats')
       const { data } = await authFetch('/graph/rawData')
       //console.log(data);
       dispatch({
-        type: SHOW_STATS_SUCCESS,
+        type: SHOW_GRAPH_SUCCESS,
         payload: {
           rawstats: [data.value],
           monthlyApplications: data.name,
