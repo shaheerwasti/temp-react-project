@@ -5,11 +5,11 @@ import { useEffect } from 'react'
 import Wrapper from '../../assets/wrappers/DashboardFormPage'
 const MyGraph = () => {
 
-    const { graphData, rawData, isLoading, monthlyApplications } = useAppContext()
+    const { graphData, isLoading, totalGraph } = useAppContext()
 
     useEffect(() => {
         graphData()
-        //rawData()
+        //totalGraph()
         // eslint-disable-next-line
     }, [])
     if (isLoading) {
@@ -24,7 +24,6 @@ const MyGraph = () => {
                 <h3>Comparative analysis page</h3>
                 <p>Grouped by : Risk level = 1, Score = 0, Ported = False</p>
                 <ChartsContainer />
-                <Link to='/'>back home</Link>
             </div>
         </Wrapper>
     )

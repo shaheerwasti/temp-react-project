@@ -27,6 +27,8 @@ import {
   CHANGE_PAGE,
   SHOW_GRAPH_BEGIN,
   SHOW_GRAPH_SUCCESS,
+  SHOW_TGRAPH_BEGIN,
+  SHOW_TGRAPH_SUCCESS,
 } from './actions'
 
 import { initialState } from './appContext'
@@ -239,9 +241,26 @@ const reducer = (state, action) => {
       ...state,
       isLoading: false,
       stats: action.payload.stats,
-      monthlyApplications: action.payload.monthlyApplications,
+      monthlyNumbers: action.payload.monthlyNumbers,
     }
   }
+
+  if (action.type === SHOW_TGRAPH_BEGIN) {
+    return {
+      ...state,
+      isLoading: true,
+      showAlert: false,
+    }
+  }
+  if (action.type === SHOW_TGRAPH_SUCCESS) {
+    return {
+      ...state,
+      isLoading: false,
+      stats: action.payload.stats,
+      totalNumbers: action.payload.totalNumbers,
+    }
+  }
+
   if (action.type === CLEAR_FILTERS) {
     return {
       ...state,
