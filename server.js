@@ -34,9 +34,14 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('dev'))
 }
 
+
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 // only when ready to deploy
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.resolve(__dirname, './client/build')))
+}
+
 // app.use(express.static(path.resolve(__dirname, './client/build')))
 
 app.use(express.json())
@@ -49,7 +54,7 @@ app.use(mongoSanitize())
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/graph', graphRouter)
 app.use('/api/v1/jobs', authenticateUser, jobsRouter)
-app.use('/api/v2/gsheet', gsheetRouter)
+app.use('/api/v1/gsheet', gsheetRouter)
 
 // only when ready to deploy
 // app.get('*', (req, res) => {

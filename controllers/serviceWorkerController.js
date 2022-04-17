@@ -1,17 +1,30 @@
 import { StatusCodes } from 'http-status-codes'
 import { BadRequestError, UnAuthenticatedError } from '../errors/index.js'
 import { google } from 'googleapis'
+import csv from 'csvtojson'
 import { auth } from 'google-auth-library'
-
 const TVRfetch = async (req, res) => {
 
     try {
         await Promise.allSettled([getfromGSheet(req.body)]).then((resGsheetApi) => {
             //console.log(resGsheetApi);
-            //const status = 'fulfilled';
-            //if (resGsheetApi.status === status) {
-            res.status(StatusCodes.OK).json(...resGsheetApi);
-            //}
+            const status = 'fulfilled';
+            resGsheetApi.forEach(async (item) => {
+
+                //console.log()
+                if (item.status === status) {
+
+                    let myString = item.value.replace(/['"]+/g, '')
+                    let jsonData = await csv({ output: "line" })
+                        .fromString(myString)
+                    // .subscribe((csvLine) => {
+                    // csvLine =>  "1,2,3" and "4,5,6"
+                    //console.log(jsonData);
+                    myString = myString.replace(/\n/g, '').split("values: ")[1].split("}")[0]
+                    res.status(StatusCodes.OK).json(myString);
+                    // })
+                }
+            })
         }).catch((e) => console.log(e));
     } catch (error) {
         console.log(error);
@@ -76,5 +89,7 @@ const getfromGSheet = async ({ spreadsheetId, range }) => {
     }
 
 }
+
+
 
 export { TVRfetch }

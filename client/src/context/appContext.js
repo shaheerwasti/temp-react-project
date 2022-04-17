@@ -33,6 +33,8 @@ import {
   SHOW_GRAPH_SUCCESS,
   SHOW_TGRAPH_BEGIN,
   SHOW_TGRAPH_SUCCESS,
+  FETCH_GOOGLE_SHEET_DATA_BEGIN,
+  FETCH_GOOGLE_SHEET_DATA_SUCCESS,
 } from './actions'
 
 const token = localStorage.getItem('token')
@@ -364,6 +366,29 @@ const AppProvider = ({ children }) => {
     clearAlert()
   }
 
+  const getSheetsData = async (req, res) => {
+    dispatch({
+      type: FETCH_GOOGLE_SHEET_DATA_BEGIN
+    })
+
+    try {
+      const { data } = await authFetch.post('/gsheet/tvr', {
+        "spreadsheetId": "18O_GODzo7ER4Efv5tAtnCWfV8ZtsageJkSM54f6Jn0g",
+        "range": "Criteria 5"
+      })
+      //console.log(data);
+      dispatch({
+        type: FETCH_GOOGLE_SHEET_DATA_SUCCESS,
+        payload: {
+          data,
+        }
+      })
+    } catch (error) {
+      logoutUser()
+    }
+
+  }
+
 
 
   const clearFilters = () => {
@@ -393,6 +418,7 @@ const AppProvider = ({ children }) => {
         changePage,
         graphData,
         totalGraph,
+        getSheetsData,
       }}
     >
       {children}

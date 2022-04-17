@@ -29,6 +29,8 @@ import {
   SHOW_GRAPH_SUCCESS,
   SHOW_TGRAPH_BEGIN,
   SHOW_TGRAPH_SUCCESS,
+  FETCH_GOOGLE_SHEET_DATA_BEGIN,
+  FETCH_GOOGLE_SHEET_DATA_SUCCESS,
 } from './actions'
 
 import { initialState } from './appContext'
@@ -258,6 +260,22 @@ const reducer = (state, action) => {
       isLoading: false,
       stats: action.payload.stats,
       totalNumbers: action.payload.totalNumbers,
+    }
+  }
+
+
+  if (action.type === FETCH_GOOGLE_SHEET_DATA_BEGIN) {
+    return {
+      ...state,
+      isLoading: true,
+      showAlert: false,
+    }
+  }
+  if (action.type === FETCH_GOOGLE_SHEET_DATA_SUCCESS) {
+    return {
+      ...state,
+      isLoading: false,
+      data: action.payload.data,
     }
   }
 
