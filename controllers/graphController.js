@@ -103,17 +103,17 @@ const murcury = async (req, res) => {
                 let { data } = await axios.request(transactionsoptions)
 
                 let myArr = jsonArrayTo2D(data.transactions)
-                myArr.forEach((item,index)=>{
+                myArr.forEach((item, index) => {
                     for (let i = 0; i <= item.length; i++) {
                         if (i == 11) {
-                            myArr[index][i]=null; 
+                            myArr[index][i] = '';
                         }
                     }
                 })
                 sendtoGsheet(myArr)
-                
-                //console.log(myArr);
-                res.status(StatusCodes.OK).json({msg:'OK'})
+
+                console.log(myArr);
+                res.status(StatusCodes.OK).json({ msg: 'ok' })
             }
         })
 
@@ -125,9 +125,9 @@ const murcury = async (req, res) => {
 
 
     async function sendtoGsheet(valArr) {
-        let myArr = jsonArrayTo2D(valArr)
+        //let myArr = jsonArrayTo2D(valArr)
         const auth = new google.auth.GoogleAuth({
-            keyFile: "prime-works-329509-2f6599b47688.json",
+            keyFile: process.env.KEY_FILE,
             scopes: "https://www.googleapis.com/auth/spreadsheets"
         });
         const client = await auth.getClient();
@@ -142,10 +142,10 @@ const murcury = async (req, res) => {
             await googleSheets.spreadsheets.values.append({
                 auth,
                 spreadsheetId,
-                range: "Transections!A:Z",
+                range: "Transactions!A:Z",
                 valueInputOption: "USER_ENTERED",
                 resource: {
-                    values: myArr,
+                    values: valArr,
                 }
             });
 
