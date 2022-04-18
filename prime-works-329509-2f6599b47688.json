@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "prime-works-329509",
+  "private_key_id": "2f6599b4768841088630ff1d01749e1ff20c4c11",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDERxdUc6ojQEPx\nFY+G3X7HXM/mgYjRRcUsI+lZmDrExqKdS80Y16pwDa0ohBkY27F55yx8PqAhU2WP\nwDT5tVwnYW/HH3dHEYc0jM52cHMrkMJcZOUHZb8BB5jUnVYc5dIhN0ZOFrAqcE/v\np94Nd2Lh1IMrW5hmFnfk9K0rvMlp046xsEYwfNAoxakq9YAtljq/KxGexImYGVgX\ns09h6bZuPbQZUELoZoZlkgBxY0rTASrYSwXiGkSa0EXpa6NwzWRNO5kdHp5avE38\nS/crxIM0xGTeJPUcxrJepB1SmqcgF6cL282ilxnxWp/m7yRF3cJ/yTNRFCUmG7QG\nzWBotTT9AgMBAAECggEAG8/xC9v561XTasmB1Xv0V36czQ5k2zaWOmt6SOJLzY9S\nApT3ooII2ijt9PRG9CFJVDtAL/jVyvMczJJRT2L2BHSHmMEqLy1aKcWcCedkQnOY\nPuxjEbnGp3gynUoQJjcgn+lLsov/eXwBr7VrPyBAKDzrO00W2rxrT8ul8DEnnzGG\nDM1P2TWhcvQBltdjXwloz2tdyO5fC9kwCbmrpm8yXYkwVYnqWYFByniwzUoNCzk0\nl41GN+hVw6lh7WkVkVeQm3dKYgEj/yP/TEcUsjNuV4ctFwdK2ImUrrAIPWg3iN1v\nl9hDWQmjzRhnVIRv3/M95QNraVOOJlOlWAKLXOlvpwKBgQDp2g4kfIRPsBocBBBn\nVWpzoMiNN3d3qH7WSM5mPi1AV7lsURZqNvJ24R8qph0kH9KrCrfaTFaR12szpcys\nXShcEM37Lpo9xGDnCKEPtMaeqIQrw8M5Go66gRgeoERlTzsygOGUxFfYW/0Zb77r\nCezbP3J10VwFnOraqT3sMukf4wKBgQDW3gTUrjW1s2OLo9QmvX4HIj1EyOIxnjg4\nbXB/xqkn/AmHUUuk2xcYzRZ+BYblibpZ571TjVBP8yaBfQ5nqXeTZJUKsFNV89mw\nFEhW5W9e55fh7k44c0lJt8m/K55jMnZq4wCj0cX+bIwBTkye1cZfM58wKBlIi3+P\nyP3c5YqtnwKBgQCpV3BaV5jwo9OkagT+70mxBcN1D6+BhRCkWACu5WObbmsl1upm\na/fUwlzxY21C1ZCWr6JHgHRIFDjbI7s9LhCl6r1eoXasN+L8KrGHUB9skRd1IcPj\nPCoTQJyYwPIGcwOpJM82DaCXWrXDj7ovNfbBJgba7oq2vdUMFvZybsOGhQKBgDvD\n04oozs20kQrFTfxcltJ7JpmcWrY8cRzY7ALOijyR8UCPT0ASpLEEUq5I8UWlco0R\nVWsJEn66fkpkM36H97eqsX4gn31372P3sEtjVAAM4QU52M4A2zDDCz2+bzbeUWvX\nqlTmw3DKVoMCeXNwuNXAMRYfATFZg+jFmj84JcO3AoGAK+1wbaqlSD7YB6hevTnr\nYF//uLsLWu86pC4TxFcjshBbMNLMGZZPCyMzAi+HsyJBJzsPQFG/OFiCaNLoGe1i\nk9XgfMQBsfC2s2AaNp3TJRGlvD6GaC/Wa01Ra18OyKtz83roZsaPA8vPNXPuusdW\n/qgVZy5hxhFfyGRgtkxcrcE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "prime-works@prime-works-329509.iam.gserviceaccount.com",
+  "client_id": "102716613110367040044",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/prime-works%40prime-works-329509.iam.gserviceaccount.com"
+}

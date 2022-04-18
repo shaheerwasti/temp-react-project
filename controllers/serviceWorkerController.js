@@ -61,9 +61,18 @@ async function sendtoGsheet(valArr) {
 const getfromGSheet = async ({ spreadsheetId, range }) => {
     console.log(spreadsheetId, range);
     const auth = new google.auth.GoogleAuth({
-        keyFile: "prime-works-329509-2f6599b47688.json",
+        keyFile: process.env.KEY_FILE,
         scopes: "https://www.googleapis.com/auth/spreadsheets"
     });
+
+    const oauth2Client = new google.auth.OAuth2(
+        '1066823544715-rjr4p71r48rkofsb9s86c58mvrmiim5h.apps.googleusercontent.com',
+        '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',
+        'https://dash-gen.herokuapp.com/oauth2callback'
+    );
+
+    let API_KEY = 'AIzaSyAtO5Ll9NStUIlYx1e16AnJVZMCztmKgpI'
+
     const sheets = google.sheets('v4');
 
     const request = {
