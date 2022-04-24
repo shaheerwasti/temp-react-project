@@ -112,7 +112,7 @@ const murcury = async (req, res) => {
                 })
                 sendtoGsheet(myArr)
 
-                console.log(myArr);
+                //console.log(myArr);
                 res.status(StatusCodes.OK).json({ msg: 'ok' })
             }
         })
