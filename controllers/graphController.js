@@ -12,9 +12,10 @@ import { google } from 'googleapis'
 const GSSD = async (req, res) => {
 
 
-    const databaseNumber = await Number.countDocuments({ "risk_level": 1, "score": 0, "ported": false })//({ "risk_level": 44 });
-    const totalNumbersRan = await Number.countDocuments({ "risk_level": { $exists: true }, "score": { $exists: true }, "ported": { $exists: true } });
-    res.status(StatusCodes.OK).json({ "name": "Filter 1 : risk level = 1, score = 0, ported = false", numbersPassesFilter1: databaseNumber, totalNumbers: totalNumbersRan })
+    const portedNumbers = await Number.countDocuments({ "ported": true })//({ "risk_level": 44 });
+    const distinctLocalities = await Number.distinct('locality')
+    const totalNumbersWithAddonsData = await Number.countDocuments({ "risk_level": { $exists: true }, "score": { $exists: true }, "ported": { $exists: true } });
+    res.status(StatusCodes.OK).json({ portedNumbers, totalNumbers: totalNumbersWithAddonsData, localities: distinctLocalities.length })
 
 }
 

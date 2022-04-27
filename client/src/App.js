@@ -14,7 +14,7 @@ import {
 function App() {
   const { user } = useAppContext()
   let x = false;
-  if (user.email === "pm@sm.com") {
+  if (user && user.email === "sm@sm.com") {
     x = true;
   }
   return (

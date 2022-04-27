@@ -11,6 +11,7 @@ import SearchContainer from './SearchContainer'
 import SmallSidebar from './SmallSidebar'
 import StatsContainer from './StatsContainer'
 import Table from './Table'
+import StatisticsContainer from './statisticsContainer'
 export {
   Logo,
   FormRow,
@@ -25,4 +26,5 @@ export {
   ChartsContainer,
   Loading,
   Table,
+  StatisticsContainer,
 }
