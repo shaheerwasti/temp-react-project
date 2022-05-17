@@ -7,7 +7,7 @@ import {  useLoadScript } from '@react-google-maps/api'
 
 
 const FsboMap = () => {
-    const { isLoaded } = useLoadScript({ googleMapsApiKey: "AIzaSyAtO5Ll9NStUIlYx1e16AnJVZMCztmKgpI" })
+    const { isLoaded } = useLoadScript({ googleMapsApiKey: "AIzaSyBrl--tkl9vUGwTjAvqgoAcpTRrDfw-nN4" })
 
     const { getFisbo, } = useAppContext()
     useEffect(() => {

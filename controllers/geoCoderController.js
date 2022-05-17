@@ -18,9 +18,9 @@ const ListOfAddresses = async (req, res) => {
 
     let myObjs = json.GEOresults;
     res.status(StatusCodes.OK).send({
-        data:myObjs
+        data: myObjs
     })
-    return 0;
+    /*
     let BASE_URL = 'http://192.168.100.22:5000/api/v1/gsheet/tvr';
 
     let { spreadsheetId
@@ -101,6 +101,7 @@ const ListOfAddresses = async (req, res) => {
     //add two more keys lat,long
 
     //
+    */
 }
 
 const dateParserlocalFunc = (date) => {

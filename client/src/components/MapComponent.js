@@ -7,8 +7,8 @@ const containerStyle = {
 };
 
 const center = {
-    lat: 34.1652894,
-    lng: -118.7706532
+    lat: 37.0902,
+    lng: -95.7129
 }
 
 const center1 = {
@@ -22,19 +22,14 @@ const Map = () => {
     const { data } = geoCodeData
 
     if (data) {
-        console.log(data.map((item, index) => <Marker key={index} position={item.results[0].geometry.location}> </Marker> ));
-        return (<GoogleMap zoom={10} mapContainerStyle={containerStyle}
-            center={center}> {data.map((item, index) => <Marker key={index} position={item.results[0].geometry.location} > </Marker> )} </GoogleMap>)
+        console.log(data.map((item, index) => <Marker key={index} position={item.results[0].geometry.location}> </Marker>));
+        return (<GoogleMap zoom={4} mapContainerStyle={containerStyle}
+            center={center}> {data.map((item, index) => <Marker key={index} position={item.results[0].geometry.location} > </Marker>)} </GoogleMap>)
 
     }
-    // data.forEach(element => {
-    //     console.log(element);
-    // });
-    // item.results[0].geometry.location
-    //{data.map(item=><Marker position={item.results[0].location}></Marker>) }
-    // return <Marker>key={index} position={mark.results[0].location} </Marker>
-    console.log(<Marker position={center}></Marker>);
-   
+    return "YE LE BC"
+
+
 }
 
 export default Map
