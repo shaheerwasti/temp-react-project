@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@googleapis/docs": "^0.4.1",
+    "@googlemaps/react-wrapper": "^1.1.32",
     "api": "^4.3.0",
     "axios": "^0.26.1",
     "bcryptjs": "^2.4.3",
@@ -43,7 +44,9 @@
     "moment": "^2.29.1",
     "mongoose": "^6.0.13",
     "morgan": "^1.10.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
     "react-data-table-component": "^7.4.7",
+    "react-yandex-maps": "^4.6.0",
     "twilio": "^3.76.0",
     "validator": "^13.7.0",
     "xss-clean": "^0.1.1"

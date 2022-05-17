@@ -5,4 +5,5 @@ import SharedLayout from './SharedLayout'
 import Stats from './Stats'
 import MyGraph from './MyGraph'
 import MyTable from './Table'
-export { AllJobs, Profile, SharedLayout, Stats, AddJob, MyGraph, MyTable }
+import FsboMap from './Map'
+export { AllJobs, Profile, SharedLayout, Stats, AddJob, MyGraph, MyTable, FsboMap }

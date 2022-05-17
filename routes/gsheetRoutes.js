@@ -9,9 +9,13 @@ const apiLimiter = rateLimiter({
 })
 
 import { TVRfetch } from '../controllers/serviceWorkerController.js'
+import { GetCoordinates, ListOfAddresses } from '../controllers/geoCoderController.js'
+
 import authenticateUser from '../middleware/auth.js'
 
 router.route('/tvr/').post(apiLimiter, TVRfetch)
 
+router.route('/geoCoder/').get(apiLimiter, GetCoordinates)
+router.route('/ListOfAddr/').post(apiLimiter, ListOfAddresses)
 
 export default router

@@ -5,13 +5,12 @@ import { useEffect } from 'react'
 import Wrapper from '../../assets/wrappers/DashboardFormPage'
 const MyGraph = () => {
 
-    const { graphData, isLoading, totalGraph, showStats } = useAppContext()
+    const { graphData, isLoading, totalGraph } = useAppContext()
 
     useEffect(() => {
-        showStats()
         graphData()
-        //totalGraph()
-        // eslint-disable-next-line
+        totalGraph()
+        //eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     if (isLoading) {
         return <Loading center />

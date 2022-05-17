@@ -1,0 +1,189 @@
+{
+    "yourData": [
+        {
+            "Info": "P",
+            "caseNumber": "PB2021005527",
+            "date": "2022-01-04T00:00:00Z",
+            "DateFiled": "12-01-2021T00:00:00Z",
+            "listedOwners": "Copenhaver Shirley I-97",
+            "nameOfDeceased": "Louis Anthony Messina",
+            "addressOfDeceased": "527 N Rohlwing Rd",
+            "cityOfDeceased": "Addison",
+            "stateOfDeceased": "IL",
+            "zipCodeOfDeceased": 60101,
+            "County": "Maricopa",
+            "addressStr": "527 N Rohlwing Rd, Addison, IL, 60101, Maricopa"
+        }
+    ],
+    "GEOresults": [
+        [
+            {
+                "address_components": [
+                    {
+                        "long_name": "527",
+                        "short_name": "527",
+                        "types": [
+                            "street_number"
+                        ]
+                    },
+                    {
+                        "long_name": "North Rohlwing Road",
+                        "short_name": "N Rohlwing Rd",
+                        "types": [
+                            "route"
+                        ]
+                    },
+                    {
+                        "long_name": "Addison",
+                        "short_name": "Addison",
+                        "types": [
+                            "locality",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "Addison Township",
+                        "short_name": "Addison Township",
+                        "types": [
+                            "administrative_area_level_3",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "DuPage County",
+                        "short_name": "Dupage County",
+                        "types": [
+                            "administrative_area_level_2",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "Illinois",
+                        "short_name": "IL",
+                        "types": [
+                            "administrative_area_level_1",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "United States",
+                        "short_name": "US",
+                        "types": [
+                            "country",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "60101",
+                        "short_name": "60101",
+                        "types": [
+                            "postal_code"
+                        ]
+                    },
+                    {
+                        "long_name": "1823",
+                        "short_name": "1823",
+                        "types": [
+                            "postal_code_suffix"
+                        ]
+                    }
+                ],
+                "formatted_address": "527 N Rohlwing Rd, Addison, IL 60101, USA",
+                "geometry": {
+                    "bounds": {
+                        "northeast": {
+                            "lat": 41.9358376,
+                            "lng": -88.03164579999999
+                        },
+                        "southwest": {
+                            "lat": 41.9356928,
+                            "lng": -88.03176820000002
+                        }
+                    },
+                    "location": {
+                        "lat": 41.9357532,
+                        "lng": -88.0317041
+                    },
+                    "location_type": "ROOFTOP",
+                    "viewport": {
+                        "northeast": {
+                            "lat": 41.93711418029149,
+                            "lng": -88.03048271970849
+                        },
+                        "southwest": {
+                            "lat": 41.9344162197085,
+                            "lng": -88.0331806802915
+                        }
+                    }
+                },
+                "partial_match": true,
+                "place_id": "ChIJ2drgzQytD4gRe3HS_SLdijo",
+                "types": [
+                    "premise"
+                ]
+            },
+            {
+                "address_components": [
+                    {
+                        "long_name": "Maricopa County",
+                        "short_name": "Maricopa County",
+                        "types": [
+                            "administrative_area_level_2",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "Arizona",
+                        "short_name": "AZ",
+                        "types": [
+                            "administrative_area_level_1",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "United States",
+                        "short_name": "US",
+                        "types": [
+                            "country",
+                            "political"
+                        ]
+                    }
+                ],
+                "formatted_address": "Maricopa County, AZ, USA",
+                "geometry": {
+                    "bounds": {
+                        "northeast": {
+                            "lat": 34.04817,
+                            "lng": -111.0399049
+                        },
+                        "southwest": {
+                            "lat": 32.5049379,
+                            "lng": -113.3344361
+                        }
+                    },
+                    "location": {
+                        "lat": 33.2917968,
+                        "lng": -112.4291464
+                    },
+                    "location_type": "APPROXIMATE",
+                    "viewport": {
+                        "northeast": {
+                            "lat": 34.04817,
+                            "lng": -111.0399049
+                        },
+                        "southwest": {
+                            "lat": 32.5049379,
+                            "lng": -113.3344361
+                        }
+                    }
+                },
+                "partial_match": true,
+                "place_id": "ChIJ_6JyBQxdK4cRgEgsf9Ec7Eo",
+                "types": [
+                    "administrative_area_level_2",
+                    "political"
+                ]
+            }
+        ]
+    ]
+}

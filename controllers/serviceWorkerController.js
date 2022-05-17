@@ -1,8 +1,8 @@
 import { StatusCodes } from 'http-status-codes'
 import { BadRequestError, UnAuthenticatedError } from '../errors/index.js'
 import { google } from 'googleapis'
-import csv from 'csvtojson'
-import { auth } from 'google-auth-library'
+// import csv from 'csvtojson'
+// import { auth } from 'google-auth-library'
 const TVRfetch = async (req, res) => {
 
     try {
@@ -10,19 +10,9 @@ const TVRfetch = async (req, res) => {
             //console.log(resGsheetApi);
             const status = 'fulfilled';
             resGsheetApi.forEach(async (item) => {
-
                 //console.log()
                 if (item.status === status) {
-
-                    let myString = item.value.replace(/['"]+/g, '')
-                    let jsonData = await csv({ output: "line" })
-                        .fromString(myString)
-                    // .subscribe((csvLine) => {
-                    // csvLine =>  "1,2,3" and "4,5,6"
-                    //console.log(jsonData);
-                    myString = myString.replace(/\n/g, '').split("values: ")[1].split("}")[0]
-                    res.status(StatusCodes.OK).json(myString);
-                    // })
+                    res.status(StatusCodes.OK).json({ status: 'fulfilled', ...JSON.parse(item.value) });
                 }
             })
         }).catch((e) => console.log(e));
@@ -64,14 +54,6 @@ const getfromGSheet = async ({ spreadsheetId, range }) => {
         keyFile: process.env.KEY_FILE,
         scopes: "https://www.googleapis.com/auth/spreadsheets"
     });
-
-    const oauth2Client = new google.auth.OAuth2(
-        '1066823544715-rjr4p71r48rkofsb9s86c58mvrmiim5h.apps.googleusercontent.com',
-        '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',
-        'https://dash-gen.herokuapp.com/oauth2callback'
-    );
-
-    let API_KEY = 'AIzaSyAtO5Ll9NStUIlYx1e16AnJVZMCztmKgpI'
 
     const sheets = google.sheets('v4');
 

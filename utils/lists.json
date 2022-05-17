@@ -1,0 +1,999 @@
+{
+    "GEOresults": [
+        {
+            "results": [
+                {
+                    "address_components": [
+                        {
+                            "long_name": "527",
+                            "short_name": "527",
+                            "types": [
+                                "street_number"
+                            ]
+                        },
+                        {
+                            "long_name": "North Rohlwing Road",
+                            "short_name": "N Rohlwing Rd",
+                            "types": [
+                                "route"
+                            ]
+                        },
+                        {
+                            "long_name": "Addison",
+                            "short_name": "Addison",
+                            "types": [
+                                "locality",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Addison Township",
+                            "short_name": "Addison Township",
+                            "types": [
+                                "administrative_area_level_3",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "DuPage County",
+                            "short_name": "Dupage County",
+                            "types": [
+                                "administrative_area_level_2",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Illinois",
+                            "short_name": "IL",
+                            "types": [
+                                "administrative_area_level_1",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "United States",
+                            "short_name": "US",
+                            "types": [
+                                "country",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "60101",
+                            "short_name": "60101",
+                            "types": [
+                                "postal_code"
+                            ]
+                        },
+                        {
+                            "long_name": "1823",
+                            "short_name": "1823",
+                            "types": [
+                                "postal_code_suffix"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "527 N Rohlwing Rd, Addison, IL 60101, USA",
+                    "geometry": {
+                        "bounds": {
+                            "northeast": {
+                                "lat": 41.9358376,
+                                "lng": -88.03164579999999
+                            },
+                            "southwest": {
+                                "lat": 41.9356928,
+                                "lng": -88.03176820000002
+                            }
+                        },
+                        "location": {
+                            "lat": 41.9357532,
+                            "lng": -88.0317041
+                        },
+                        "location_type": "ROOFTOP",
+                        "viewport": {
+                            "northeast": {
+                                "lat": 41.93711418029149,
+                                "lng": -88.03048271970849
+                            },
+                            "southwest": {
+                                "lat": 41.9344162197085,
+                                "lng": -88.0331806802915
+                            }
+                        }
+                    },
+                    "partial_match": true,
+                    "place_id": "ChIJ2drgzQytD4gRe3HS_SLdijo",
+                    "types": [
+                        "premise"
+                    ]
+                },
+                {
+                    "address_components": [
+                        {
+                            "long_name": "Maricopa County",
+                            "short_name": "Maricopa County",
+                            "types": [
+                                "administrative_area_level_2",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Arizona",
+                            "short_name": "AZ",
+                            "types": [
+                                "administrative_area_level_1",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "United States",
+                            "short_name": "US",
+                            "types": [
+                                "country",
+                                "political"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "Maricopa County, AZ, USA",
+                    "geometry": {
+                        "bounds": {
+                            "northeast": {
+                                "lat": 34.04817,
+                                "lng": -111.0399049
+                            },
+                            "southwest": {
+                                "lat": 32.5049379,
+                                "lng": -113.3344361
+                            }
+                        },
+                        "location": {
+                            "lat": 33.2917968,
+                            "lng": -112.4291464
+                        },
+                        "location_type": "APPROXIMATE",
+                        "viewport": {
+                            "northeast": {
+                                "lat": 34.04817,
+                                "lng": -111.0399049
+                            },
+                            "southwest": {
+                                "lat": 32.5049379,
+                                "lng": -113.3344361
+                            }
+                        }
+                    },
+                    "partial_match": true,
+                    "place_id": "ChIJ_6JyBQxdK4cRgEgsf9Ec7Eo",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                }
+            ],
+            "file": {
+                "Info": "P",
+                "caseNumber": "PB2021005527",
+                "date": "2022-01-04T00:00:00Z",
+                "DateFiled": "12-01-2021T00:00:00Z",
+                "listedOwners": "Copenhaver Shirley I-97",
+                "nameOfDeceased": "Louis Anthony Messina",
+                "addressOfDeceased": "527 N Rohlwing Rd",
+                "cityOfDeceased": "Addison",
+                "stateOfDeceased": "IL",
+                "zipCodeOfDeceased": 60101,
+                "County": "Maricopa",
+                "addressStr": "527 N Rohlwing Rd, Addison, IL, 60101, Maricopa"
+            }
+        },
+        {
+            "results": [
+                {
+                    "address_components": [
+                        {
+                            "long_name": "29603",
+                            "short_name": "29603",
+                            "types": [
+                                "street_number"
+                            ]
+                        },
+                        {
+                            "long_name": "Ridgeway Drive",
+                            "short_name": "Ridgeway Dr",
+                            "types": [
+                                "route"
+                            ]
+                        },
+                        {
+                            "long_name": "Agoura Hills",
+                            "short_name": "Agoura Hills",
+                            "types": [
+                                "locality",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Los Angeles County",
+                            "short_name": "Los Angeles County",
+                            "types": [
+                                "administrative_area_level_2",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "California",
+                            "short_name": "CA",
+                            "types": [
+                                "administrative_area_level_1",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "United States",
+                            "short_name": "US",
+                            "types": [
+                                "country",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "91301",
+                            "short_name": "91301",
+                            "types": [
+                                "postal_code"
+                            ]
+                        },
+                        {
+                            "long_name": "4148",
+                            "short_name": "4148",
+                            "types": [
+                                "postal_code_suffix"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "29603 Ridgeway Dr, Agoura Hills, CA 91301, USA",
+                    "geometry": {
+                        "bounds": {
+                            "northeast": {
+                                "lat": 34.1654032,
+                                "lng": -118.7705217
+                            },
+                            "southwest": {
+                                "lat": 34.1651904,
+                                "lng": -118.7708287
+                            }
+                        },
+                        "location": {
+                            "lat": 34.1652894,
+                            "lng": -118.7706532
+                        },
+                        "location_type": "ROOFTOP",
+                        "viewport": {
+                            "northeast": {
+                                "lat": 34.1665609802915,
+                                "lng": -118.7693262197085
+                            },
+                            "southwest": {
+                                "lat": 34.1638630197085,
+                                "lng": -118.7720241802915
+                            }
+                        }
+                    },
+                    "partial_match": true,
+                    "place_id": "ChIJcaBLyiYk6IAR4RE3Hk38Lmo",
+                    "types": [
+                        "premise"
+                    ]
+                },
+                {
+                    "address_components": [
+                        {
+                            "long_name": "Maricopa County",
+                            "short_name": "Maricopa County",
+                            "types": [
+                                "administrative_area_level_2",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Arizona",
+                            "short_name": "AZ",
+                            "types": [
+                                "administrative_area_level_1",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "United States",
+                            "short_name": "US",
+                            "types": [
+                                "country",
+                                "political"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "Maricopa County, AZ, USA",
+                    "geometry": {
+                        "bounds": {
+                            "northeast": {
+                                "lat": 34.04817,
+                                "lng": -111.0399049
+                            },
+                            "southwest": {
+                                "lat": 32.5049379,
+                                "lng": -113.3344361
+                            }
+                        },
+                        "location": {
+                            "lat": 33.2917968,
+                            "lng": -112.4291464
+                        },
+                        "location_type": "APPROXIMATE",
+                        "viewport": {
+                            "northeast": {
+                                "lat": 34.04817,
+                                "lng": -111.0399049
+                            },
+                            "southwest": {
+                                "lat": 32.5049379,
+                                "lng": -113.3344361
+                            }
+                        }
+                    },
+                    "partial_match": true,
+                    "place_id": "ChIJ_6JyBQxdK4cRgEgsf9Ec7Eo",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                }
+            ],
+            "file": {
+                "Info": "P",
+                "caseNumber": "PB2021091443",
+                "date": "08-12-2021T00:00:00Z",
+                "DateFiled": "11-09-2021T00:00:00Z",
+                "listedOwners": "Duffy Robert J",
+                "nameOfDeceased": "Henry King Kroft",
+                "addressOfDeceased": "29603 Ridgeway Dr",
+                "cityOfDeceased": "Agoura Hills",
+                "stateOfDeceased": "CA",
+                "zipCodeOfDeceased": 91301,
+                "County": "Maricopa",
+                "addressStr": "29603 Ridgeway Dr, Agoura Hills, CA, 91301, Maricopa"
+            }
+        },
+        {
+            "results": [
+                {
+                    "address_components": [
+                        {
+                            "long_name": "121",
+                            "short_name": "121",
+                            "types": [
+                                "street_number"
+                            ]
+                        },
+                        {
+                            "long_name": "West 3rd Avenue",
+                            "short_name": "W 3rd Ave",
+                            "types": [
+                                "route"
+                            ]
+                        },
+                        {
+                            "long_name": "New Cornelia",
+                            "short_name": "New Cornelia",
+                            "types": [
+                                "neighborhood",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Ajo",
+                            "short_name": "Ajo",
+                            "types": [
+                                "locality",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Pima County",
+                            "short_name": "Pima County",
+                            "types": [
+                                "administrative_area_level_2",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Arizona",
+                            "short_name": "AZ",
+                            "types": [
+                                "administrative_area_level_1",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "United States",
+                            "short_name": "US",
+                            "types": [
+                                "country",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "85321",
+                            "short_name": "85321",
+                            "types": [
+                                "postal_code"
+                            ]
+                        },
+                        {
+                            "long_name": "2163",
+                            "short_name": "2163",
+                            "types": [
+                                "postal_code_suffix"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "121 W 3rd Ave, Ajo, AZ 85321, USA",
+                    "geometry": {
+                        "bounds": {
+                            "northeast": {
+                                "lat": 32.3806026,
+                                "lng": -112.8631767
+                            },
+                            "southwest": {
+                                "lat": 32.3804984,
+                                "lng": -112.8632858
+                            }
+                        },
+                        "location": {
+                            "lat": 32.3805544,
+                            "lng": -112.8632208
+                        },
+                        "location_type": "ROOFTOP",
+                        "viewport": {
+                            "northeast": {
+                                "lat": 32.3819726802915,
+                                "lng": -112.8618822697085
+                            },
+                            "southwest": {
+                                "lat": 32.3792747197085,
+                                "lng": -112.8645802302915
+                            }
+                        }
+                    },
+                    "place_id": "ChIJ39Z-p_ZY1YAR5sDd4fyt-2E",
+                    "types": [
+                        "premise"
+                    ]
+                }
+            ],
+            "file": {
+                "Info": "P",
+                "caseNumber": "PB2021005429",
+                "date": "2022-01-04T00:00:00Z",
+                "DateFiled": "12-01-2021T00:00:00Z",
+                "listedOwners": "Simmonds Clarence M",
+                "nameOfDeceased": "Clarence Mortimer Simmonds",
+                "addressOfDeceased": "121 W 3rd Ave",
+                "cityOfDeceased": "Ajo",
+                "stateOfDeceased": "AZ",
+                "zipCodeOfDeceased": 85321,
+                "County": "Maricopa",
+                "addressStr": "121 W 3rd Ave, Ajo, AZ, 85321, Maricopa"
+            }
+        },
+        {
+            "results": [
+                {
+                    "address_components": [
+                        {
+                            "long_name": "38957",
+                            "short_name": "38957",
+                            "types": [
+                                "street_number"
+                            ]
+                        },
+                        {
+                            "long_name": "Morningstar Road Northeast",
+                            "short_name": "Morningstar Rd NE",
+                            "types": [
+                                "route"
+                            ]
+                        },
+                        {
+                            "long_name": "Albany",
+                            "short_name": "Albany",
+                            "types": [
+                                "locality",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Linn County",
+                            "short_name": "Linn County",
+                            "types": [
+                                "administrative_area_level_2",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Oregon",
+                            "short_name": "OR",
+                            "types": [
+                                "administrative_area_level_1",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "United States",
+                            "short_name": "US",
+                            "types": [
+                                "country",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "97321",
+                            "short_name": "97321",
+                            "types": [
+                                "postal_code"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "38957 Morningstar Rd NE, Albany, OR 97321, USA",
+                    "geometry": {
+                        "location": {
+                            "lat": 44.7069592,
+                            "lng": -123.0588789
+                        },
+                        "location_type": "ROOFTOP",
+                        "viewport": {
+                            "northeast": {
+                                "lat": 44.7088323302915,
+                                "lng": -123.0575303697085
+                            },
+                            "southwest": {
+                                "lat": 44.7061343697085,
+                                "lng": -123.0602283302915
+                            }
+                        }
+                    },
+                    "partial_match": true,
+                    "place_id": "ChIJo6k8KogNwFQR1RWI_GPrsTw",
+                    "plus_code": {
+                        "compound_code": "PW4R+QC Albany, OR",
+                        "global_code": "84PRPW4R+QC"
+                    },
+                    "types": [
+                        "street_address"
+                    ]
+                },
+                {
+                    "address_components": [
+                        {
+                            "long_name": "Maricopa County",
+                            "short_name": "Maricopa County",
+                            "types": [
+                                "administrative_area_level_2",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Arizona",
+                            "short_name": "AZ",
+                            "types": [
+                                "administrative_area_level_1",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "United States",
+                            "short_name": "US",
+                            "types": [
+                                "country",
+                                "political"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "Maricopa County, AZ, USA",
+                    "geometry": {
+                        "bounds": {
+                            "northeast": {
+                                "lat": 34.04817,
+                                "lng": -111.0399049
+                            },
+                            "southwest": {
+                                "lat": 32.5049379,
+                                "lng": -113.3344361
+                            }
+                        },
+                        "location": {
+                            "lat": 33.2917968,
+                            "lng": -112.4291464
+                        },
+                        "location_type": "APPROXIMATE",
+                        "viewport": {
+                            "northeast": {
+                                "lat": 34.04817,
+                                "lng": -111.0399049
+                            },
+                            "southwest": {
+                                "lat": 32.5049379,
+                                "lng": -113.3344361
+                            }
+                        }
+                    },
+                    "partial_match": true,
+                    "place_id": "ChIJ_6JyBQxdK4cRgEgsf9Ec7Eo",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                }
+            ],
+            "file": {
+                "Info": "F",
+                "caseNumber": "PB2021005031",
+                "date": "08-12-2021T00:00:00Z",
+                "DateFiled": "11-04-2021T00:00:00Z",
+                "listedOwners": "",
+                "nameOfDeceased": "Alleen Susan Porter",
+                "addressOfDeceased": "38957 Morningstar Rd NE",
+                "cityOfDeceased": "Albany",
+                "stateOfDeceased": "OR",
+                "zipCodeOfDeceased": 97321,
+                "County": "Maricopa",
+                "addressStr": "38957 Morningstar Rd NE, Albany, OR, 97321, Maricopa"
+            }
+        },
+        {
+            "results": [
+                {
+                    "address_components": [
+                        {
+                            "long_name": "Albuquerque",
+                            "short_name": "Albuquerque",
+                            "types": [
+                                "locality",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Bernalillo County",
+                            "short_name": "Bernalillo County",
+                            "types": [
+                                "administrative_area_level_2",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "New Mexico",
+                            "short_name": "NM",
+                            "types": [
+                                "administrative_area_level_1",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "United States",
+                            "short_name": "US",
+                            "types": [
+                                "country",
+                                "political"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "Albuquerque, NM, USA",
+                    "geometry": {
+                        "bounds": {
+                            "northeast": {
+                                "lat": 35.2180539,
+                                "lng": -106.4711629
+                            },
+                            "southwest": {
+                                "lat": 34.9467659,
+                                "lng": -106.881796
+                            }
+                        },
+                        "location": {
+                            "lat": 35.0843859,
+                            "lng": -106.650422
+                        },
+                        "location_type": "APPROXIMATE",
+                        "viewport": {
+                            "northeast": {
+                                "lat": 35.2180539,
+                                "lng": -106.4711629
+                            },
+                            "southwest": {
+                                "lat": 34.9467659,
+                                "lng": -106.881796
+                            }
+                        }
+                    },
+                    "partial_match": true,
+                    "place_id": "ChIJe4MJ090KIocR_fbZuM7408A",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "address_components": [
+                        {
+                            "long_name": "87176",
+                            "short_name": "87176",
+                            "types": [
+                                "postal_code"
+                            ]
+                        },
+                        {
+                            "long_name": "Bel-Air",
+                            "short_name": "Bel-Air",
+                            "types": [
+                                "neighborhood",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Albuquerque",
+                            "short_name": "Albuquerque",
+                            "types": [
+                                "locality",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Bernalillo County",
+                            "short_name": "Bernalillo County",
+                            "types": [
+                                "administrative_area_level_2",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "New Mexico",
+                            "short_name": "NM",
+                            "types": [
+                                "administrative_area_level_1",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "United States",
+                            "short_name": "US",
+                            "types": [
+                                "country",
+                                "political"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "Albuquerque, NM 87176, USA",
+                    "geometry": {
+                        "location": {
+                            "lat": 35.11,
+                            "lng": -106.6
+                        },
+                        "location_type": "APPROXIMATE",
+                        "viewport": {
+                            "northeast": {
+                                "lat": 35.1113489802915,
+                                "lng": -106.5986510197085
+                            },
+                            "southwest": {
+                                "lat": 35.1086510197085,
+                                "lng": -106.6013489802915
+                            }
+                        }
+                    },
+                    "partial_match": true,
+                    "place_id": "ChIJnUjRfst0IocR7cS50wtmKUQ",
+                    "types": [
+                        "postal_code"
+                    ]
+                }
+            ],
+            "file": {
+                "Info": "F",
+                "caseNumber": "PB2021071371",
+                "date": "08-12-2021T00:00:00Z",
+                "DateFiled": "11-16-2021T00:00:00Z",
+                "listedOwners": "",
+                "nameOfDeceased": "Douglas Yale Gardner",
+                "addressOfDeceased": "PO Box 36085",
+                "cityOfDeceased": "Albuquerque",
+                "stateOfDeceased": "NM",
+                "zipCodeOfDeceased": 87176,
+                "County": "Maricopa",
+                "addressStr": "PO Box 36085, Albuquerque, NM, 87176, Maricopa"
+            }
+        },
+        {
+            "results": [
+                {
+                    "address_components": [
+                        {
+                            "long_name": "3006",
+                            "short_name": "3006",
+                            "types": [
+                                "street_number"
+                            ]
+                        },
+                        {
+                            "long_name": "Morrissey Street Southwest",
+                            "short_name": "Morrissey St SW",
+                            "types": [
+                                "route"
+                            ]
+                        },
+                        {
+                            "long_name": "Anderson Heights",
+                            "short_name": "Anderson Heights",
+                            "types": [
+                                "neighborhood",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Albuquerque",
+                            "short_name": "Albuquerque",
+                            "types": [
+                                "locality",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Bernalillo County",
+                            "short_name": "Bernalillo County",
+                            "types": [
+                                "administrative_area_level_2",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "New Mexico",
+                            "short_name": "NM",
+                            "types": [
+                                "administrative_area_level_1",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "United States",
+                            "short_name": "US",
+                            "types": [
+                                "country",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "87121",
+                            "short_name": "87121",
+                            "types": [
+                                "postal_code"
+                            ]
+                        },
+                        {
+                            "long_name": "5474",
+                            "short_name": "5474",
+                            "types": [
+                                "postal_code_suffix"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "3006 Morrissey St SW, Albuquerque, NM 87121, USA",
+                    "geometry": {
+                        "bounds": {
+                            "northeast": {
+                                "lat": 35.0292068,
+                                "lng": -106.7452216
+                            },
+                            "southwest": {
+                                "lat": 35.0291086,
+                                "lng": -106.7454475
+                            }
+                        },
+                        "location": {
+                            "lat": 35.0291668,
+                            "lng": -106.7453258
+                        },
+                        "location_type": "ROOFTOP",
+                        "viewport": {
+                            "northeast": {
+                                "lat": 35.0305066802915,
+                                "lng": -106.7440590197085
+                            },
+                            "southwest": {
+                                "lat": 35.0278087197085,
+                                "lng": -106.7467569802915
+                            }
+                        }
+                    },
+                    "partial_match": true,
+                    "place_id": "ChIJ9xaSk2kSIocRr-wro6v5KJM",
+                    "types": [
+                        "premise"
+                    ]
+                },
+                {
+                    "address_components": [
+                        {
+                            "long_name": "Maricopa County",
+                            "short_name": "Maricopa County",
+                            "types": [
+                                "administrative_area_level_2",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "Arizona",
+                            "short_name": "AZ",
+                            "types": [
+                                "administrative_area_level_1",
+                                "political"
+                            ]
+                        },
+                        {
+                            "long_name": "United States",
+                            "short_name": "US",
+                            "types": [
+                                "country",
+                                "political"
+                            ]
+                        }
+                    ],
+                    "formatted_address": "Maricopa County, AZ, USA",
+                    "geometry": {
+                        "bounds": {
+                            "northeast": {
+                                "lat": 34.04817,
+                                "lng": -111.0399049
+                            },
+                            "southwest": {
+                                "lat": 32.5049379,
+                                "lng": -113.3344361
+                            }
+                        },
+                        "location": {
+                            "lat": 33.2917968,
+                            "lng": -112.4291464
+                        },
+                        "location_type": "APPROXIMATE",
+                        "viewport": {
+                            "northeast": {
+                                "lat": 34.04817,
+                                "lng": -111.0399049
+                            },
+                            "southwest": {
+                                "lat": 32.5049379,
+                                "lng": -113.3344361
+                            }
+                        }
+                    },
+                    "partial_match": true,
+                    "place_id": "ChIJ_6JyBQxdK4cRgEgsf9Ec7Eo",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                }
+            ],
+            "file": {
+                "Info": "F",
+                "caseNumber": "PB2022000102",
+                "date": "03-02-2022T00:00:00Z",
+                "DateFiled": "01-10-2022T00:00:00Z",
+                "listedOwners": "O Hara Leslie L",
+                "nameOfDeceased": "Loretta Yvonne Shields",
+                "addressOfDeceased": "3006 Morrissey St SW",
+                "cityOfDeceased": "Albuquerque",
+                "stateOfDeceased": "NM",
+                "zipCodeOfDeceased": 87121,
+                "County": "Maricopa",
+                "addressStr": "3006 Morrissey St SW, Albuquerque, NM, 87121, Maricopa"
+            }
+        }
+    ]
+}

@@ -75,6 +75,8 @@ const dataDrilling = async (req, res) => {
 
 }
 
+
+//Munif func do not delete
 const murcury = async (req, res) => {
 
     const options = {
@@ -94,7 +96,7 @@ const murcury = async (req, res) => {
             if (item.nickname === "OpEx") {
                 const transactionsoptions = {
                     method: 'GET',
-                    url: `https://api.mercury.com/api/v1/account/${item.id}/transactions?limit=500&offset=01`,
+                    url: `https://api.mercury.com/api/v1/account/${item.id}/transactions?limit=500&offset=01&start=2022-03-01&end=${new Date().toISOString()}`,
                     headers: {
                         Accept: 'application/json',
                         'Content-Type': 'application/json',

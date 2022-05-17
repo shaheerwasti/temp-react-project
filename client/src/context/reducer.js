@@ -31,6 +31,8 @@ import {
   SHOW_TGRAPH_SUCCESS,
   FETCH_GOOGLE_SHEET_DATA_BEGIN,
   FETCH_GOOGLE_SHEET_DATA_SUCCESS,
+  FETCH_GEOCODE_DATA_BEGIN,
+  FETCH_GEOCODE_DATA_SUCCESS
 } from './actions'
 
 import { initialState } from './appContext'
@@ -258,9 +260,10 @@ const reducer = (state, action) => {
     return {
       ...state,
       isLoading: false,
-      stats: action.payload.stats,
+      statistics: action.payload.stats,
       totalNumbers: action.payload.totalNumbers,
     }
+
   }
 
 
@@ -275,7 +278,22 @@ const reducer = (state, action) => {
     return {
       ...state,
       isLoading: false,
-      data: action.payload.data,
+      gTableData: action.payload.data,
+    }
+  }
+
+  if (action.type === FETCH_GEOCODE_DATA_BEGIN) {
+    return {
+      ...state,
+      isLoading: true,
+      showAlert: false,
+    }
+  }
+  if (action.type === FETCH_GEOCODE_DATA_SUCCESS) {
+    return {
+      ...state,
+      isLoading: false,
+      geoCodeData: action.payload.data,
     }
   }
 

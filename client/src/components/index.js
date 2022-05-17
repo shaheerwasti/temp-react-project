@@ -12,6 +12,7 @@ import SmallSidebar from './SmallSidebar'
 import StatsContainer from './StatsContainer'
 import Table from './Table'
 import StatisticsContainer from './statisticsContainer'
+import Map from './MapComponent'
 export {
   Logo,
   FormRow,
@@ -27,4 +28,6 @@ export {
   Loading,
   Table,
   StatisticsContainer,
+  Map,
+
 }

@@ -35,6 +35,8 @@ import {
   SHOW_TGRAPH_SUCCESS,
   FETCH_GOOGLE_SHEET_DATA_BEGIN,
   FETCH_GOOGLE_SHEET_DATA_SUCCESS,
+  FETCH_GEOCODE_DATA_BEGIN,
+  FETCH_GEOCODE_DATA_SUCCESS,
 } from './actions'
 
 const token = localStorage.getItem('token')
@@ -64,6 +66,9 @@ const initialState = {
   numOfPages: 1,
   page: 1,
   stats: {},
+  statistics:{},
+  gTableData: {},
+  geoCodeData:{},
   monthlyApplications: [],
   search: '',
   searchStatus: 'all',
@@ -389,6 +394,28 @@ const AppProvider = ({ children }) => {
 
   }
 
+  const getFisbo = async (req, res) =>{
+    dispatch({
+      type:FETCH_GEOCODE_DATA_BEGIN
+    })
+    try {
+      const { data } = await authFetch.post('/gsheet/ListOfAddr', {
+         "spreadsheetId": "1CRvmhE5XGUn-f72yFrovq4N1QE-pqAXhu-II0ZvT1yA",
+        "range": "experimental-sheet" } )
+      //console.log(data);
+        dispatch({
+          type: FETCH_GEOCODE_DATA_SUCCESS,
+          payload:{
+            data,
+          }
+        })
+
+    } catch (error) {
+      logoutUser()
+    }
+
+  }
+
 
 
   const clearFilters = () => {
@@ -419,6 +446,7 @@ const AppProvider = ({ children }) => {
         graphData,
         totalGraph,
         getSheetsData,
+        getFisbo,
       }}
     >
       {children}
