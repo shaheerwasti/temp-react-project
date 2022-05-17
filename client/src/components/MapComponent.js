@@ -11,11 +11,6 @@ const center = {
     lng: -95.7129
 }
 
-const center1 = {
-    lat: 34.1652894,
-    lng: -118.7706532
-};
-
 const Map = () => {
 
     const { geoCodeData } = useAppContext();
@@ -24,10 +19,22 @@ const Map = () => {
     if (data) {
         console.log(data.map((item, index) => <Marker key={index} position={item.results[0].geometry.location}> </Marker>));
         return (<GoogleMap zoom={4} mapContainerStyle={containerStyle}
+            center={center}> 
+            {data.map((item, index) => <Marker key={index} onClick={() => window.open('https://www.google.com/maps/place/' + item.file.addressOfDeceased + "+" + item.file.cityOfDeceased + "+" + item.file.stateOfDeceased + "+" + item.file.zipCodeOfDeceased, '_blank')} position={item.results[0].geometry.location} > </Marker>)}
+             </GoogleMap>)
+
+    }
+    return "Loading..."
+
+    /*
+if (data) {
+        console.log(data.map((item, index) => <Marker key={index} position={item.results[0].geometry.location}> </Marker>));
+        return (<GoogleMap zoom={4} mapContainerStyle={containerStyle}
             center={center}> {data.map((item, index) => <Marker key={index} position={item.results[0].geometry.location} > </Marker>)} </GoogleMap>)
 
     }
-    return "YE LE BC"
+    return "Loading..."
+    */
 
 
 }
