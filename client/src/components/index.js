@@ -13,6 +13,7 @@ import StatsContainer from './StatsContainer'
 import Table from './Table'
 import StatisticsContainer from './statisticsContainer'
 import Map from './MapComponent'
+import MapInfoContainer from './MapInfoContainer'
 export {
   Logo,
   FormRow,
@@ -29,5 +30,5 @@ export {
   Table,
   StatisticsContainer,
   Map,
-
+  MapInfoContainer,
 }

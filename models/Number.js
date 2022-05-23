@@ -1,6 +1,25 @@
 import mongoose from 'mongoose'
 
 const numberSchema = new mongoose.Schema({
+
+    // results:[
+
+    // ],
+    // file:{
+    //    info:{ 
+    //        type:'String',
+    //        trim:true,
+    //     },
+    //     caseNumber: {
+    //         type: 'String',
+    //         trim: true,
+    //     },
+    //     Date: {
+    //         type: 'String',
+    //         trim: true,
+    //     },
+    // },
+
     caller_name: {
         type: String,
         trim: true,
@@ -176,7 +195,6 @@ const numberSchema = new mongoose.Schema({
         timestamps: true,
     }
 );
-
 
 
 

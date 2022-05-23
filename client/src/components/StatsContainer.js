@@ -5,7 +5,7 @@ import Wrapper from '../assets/wrappers/StatsContainer'
 
 const StatsContainer = () => {
   const { stats } = useAppContext()
-  console.log(stats);
+  //console.log(stats);
   const defaultStats = [
     {
       title: 'pending applications',

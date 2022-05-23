@@ -1,7 +1,8 @@
-import { Loading, Map } from '../../components'
+import { Loading, Map, MapInfoContainer } from '../../components'
 import { useAppContext } from '../../context/appContext'
 import { useEffect, } from 'react'
-import {  useLoadScript } from '@react-google-maps/api'
+import { useLoadScript } from '@react-google-maps/api'
+import Wrapper from '../../assets/wrappers/BigSidebar'
 
 
 
@@ -19,8 +20,15 @@ const FsboMap = () => {
         return <Loading center />
     }
 
-    return (
-        <Map />
+    return (<Wrapper className=''>
+        <div>
+
+            <h3>Map with Property Markers</h3>
+            <div id='statistics'> <MapInfoContainer /> </div>
+            <Map />
+
+        </div>
+    </Wrapper>
     )
 
 }

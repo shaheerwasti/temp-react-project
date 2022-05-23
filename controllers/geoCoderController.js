@@ -2,6 +2,7 @@
 import { StatusCodes } from 'http-status-codes'
 import { BadRequestError, UnAuthenticatedError } from '../errors/index.js'
 import axios from 'axios'
+//const Number = require('../models/CaseNumber')
 import fs from 'fs'
 import { readFile } from 'fs/promises';
 import path from 'path'
@@ -10,15 +11,20 @@ import path from 'path'
 
 const ListOfAddresses = async (req, res) => {
 
-    const json = JSON.parse(await readFile(new URL('../utils/lists.json', import.meta.url)));
+
+    /* */const json = JSON.parse(await readFile(new URL('../utils/newList.json', import.meta.url)));
 
     //let { Info, caseNumber, date, DateFiled, listedOwners, nameOfDeceased, addressOfDeceased, cityOfDeceased, stateOfDeceased, zipCodeOfDeceased, County, addressStr, } = json.yourData
 
     //json
 
     let myObjs = json.GEOresults;
+
+    // console.log(myObjs.length);
+
     res.status(StatusCodes.OK).send({
-        data: myObjs
+        data: myObjs,
+        totalMarkers: myObjs.length
     })
     /*
     let BASE_URL = 'http://192.168.100.22:5000/api/v1/gsheet/tvr';
@@ -74,6 +80,10 @@ const ListOfAddresses = async (req, res) => {
         } = element;
         let date = dateParserlocalFunc(Date)
         let DateFiled = dateFiled.replace(/\//g, '-') + "T00:00:00Z"
+
+
+        //console.log(date, DateFiled, caseNumber);
+
         let addressStr = addressOfDeceased + ', ' + cityOfDeceased + ', ' + stateOfDeceased + ', ' + zipCodeOfDeceased + ', ' + County;
 
         yourData.push({ Info, caseNumber, date, DateFiled, listedOwners, nameOfDeceased, addressOfDeceased, cityOfDeceased, stateOfDeceased, zipCodeOfDeceased, County, addressStr, })
@@ -82,12 +92,19 @@ const ListOfAddresses = async (req, res) => {
 
 
     let GEOresults = await Promise.all(yourData.map(async (file) => {
-        let { results } = await GetCoordinates(file.addressStr)
-        results = { results, file }
-        return results
+        if (file.addressOfDeceased) {
+            let { results } = await GetCoordinates(file.addressStr)
+            results = { results, file }
+            return results
+         }
+
+        // if (file.addressOfDeceased) {
+        //     console.log(file.date, file.DateFiled, file.caseNumber);
+        // }
+        return file;
     }))
 
-    console.log(GEOresults)
+    //  console.log(GEOresults)
 
 
     res.status(StatusCodes.OK).send({
@@ -101,7 +118,8 @@ const ListOfAddresses = async (req, res) => {
     //add two more keys lat,long
 
     //
-    */
+*/
+
 }
 
 const dateParserlocalFunc = (date) => {

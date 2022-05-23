@@ -66,9 +66,9 @@ const initialState = {
   numOfPages: 1,
   page: 1,
   stats: {},
-  statistics:{},
+  statistics: {},
   gTableData: {},
-  geoCodeData:{},
+  geoCodeData: {},
   monthlyApplications: [],
   search: '',
   searchStatus: 'all',
@@ -317,7 +317,7 @@ const AppProvider = ({ children }) => {
     try {
       const { data } = await authFetch('/jobs/stats')
       //const { data } = await authFetch('/graph')
-      console.log(data);
+      //console.log(data);
       dispatch({
         type: SHOW_STATS_SUCCESS,
         payload: {
@@ -394,21 +394,22 @@ const AppProvider = ({ children }) => {
 
   }
 
-  const getFisbo = async (req, res) =>{
+  const getFisbo = async (req, res) => {
     dispatch({
-      type:FETCH_GEOCODE_DATA_BEGIN
+      type: FETCH_GEOCODE_DATA_BEGIN
     })
     try {
       const { data } = await authFetch.post('/gsheet/ListOfAddr', {
-         "spreadsheetId": "1CRvmhE5XGUn-f72yFrovq4N1QE-pqAXhu-II0ZvT1yA",
-        "range": "experimental-sheet" } )
+        "spreadsheetId": "1CRvmhE5XGUn-f72yFrovq4N1QE-pqAXhu-II0ZvT1yA",
+        "range": "experimental-sheet"
+      })
       //console.log(data);
-        dispatch({
-          type: FETCH_GEOCODE_DATA_SUCCESS,
-          payload:{
-            data,
-          }
-        })
+      dispatch({
+        type: FETCH_GEOCODE_DATA_SUCCESS,
+        payload: {
+          data,
+        }
+      })
 
     } catch (error) {
       logoutUser()
