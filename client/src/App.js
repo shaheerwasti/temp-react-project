@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Register, Landing, Error, ProtectedRoute, } from './pages'
-import { useAppContext } from './context/appContext'
+
 
 import {
   AllJobs,
@@ -34,11 +34,7 @@ function App() {
           <Route path='all-numbers' element={<AllJobs />} />
           <Route path='add-number' element={<AddJob />} />
           <Route path='profile' element={<Profile />} />
-          {/* <Route path='my-graph' element={x ? <MyGraph /> : "Access Required to view contents for this page"} /> */}
           <Route path='my-graph' element={<MyGraph />} />
-          {/* <Route path='my-table' element={x ? <MyTable /> : "Access Required to view contents for this page"} />
-          <Route path='my-table' element={<MyTable />} /> */}
-          {/* <Route path='fsbo-map' element={x ? <FsboMap /> : "Access Required to view contents for this page"} /> */}
           <Route path='fsbo-map' element={<FsboMap />} />
         </Route>
         <Route path='/register' element={<Register />} />
