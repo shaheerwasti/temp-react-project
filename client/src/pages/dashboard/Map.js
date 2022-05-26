@@ -9,7 +9,8 @@ import Wrapper from '../../assets/wrappers/BigSidebar'
 
 const FsboMap = () => {
     const { isLoaded } = useLoadScript({ googleMapsApiKey: "AIzaSyAtO5Ll9NStUIlYx1e16AnJVZMCztmKgpI" })
-
+    //AIzaSyAtO5Ll9NStUIlYx1e16AnJVZMCztmKgpI
+    //AIzaSyBrl--tkl9vUGwTjAvqgoAcpTRrDfw-nN4
     const { getFisbo, } = useAppContext()
     useEffect(() => {
         getFisbo()

@@ -49,7 +49,7 @@ const AddJob = () => {
           {/* position */}
           <FormRow
             type='text'
-            name='position'
+            name='Title'
             value={position}
             handleChange={handleJobInput}
           />
@@ -63,7 +63,7 @@ const AddJob = () => {
           {/* location */}
           <FormRow
             type='text'
-            labelText='job location'
+            labelText='location'
             name='jobLocation'
             value={jobLocation}
             handleChange={handleJobInput}
@@ -78,7 +78,7 @@ const AddJob = () => {
           {/* job type */}
           <FormRowSelect
             name='jobType'
-            labelText='job type'
+            labelText='Number type'
             value={jobType}
             handleChange={handleJobInput}
             list={jobTypeOptions}
