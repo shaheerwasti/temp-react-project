@@ -48,5 +48,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://dash-gen.herokuapp.com:5000"
+  "proxy": "http://192.168.100.22:5000"
 }
