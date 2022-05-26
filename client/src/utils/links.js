@@ -11,8 +11,8 @@ const links = [
   { id: 3, text: 'add Number', path: 'add-number', icon: <FaWpforms /> },
   { id: 4, text: 'profile', path: 'profile', icon: <ImProfile /> },
   { id: 5, text: 'graph', path: 'my-graph', icon: <FaChartLine /> },
+  { id: 6, text: 'map', path: 'fsbo-map', icon: <FaMapMarked /> },
   //{ id: 6, text: 'table', path: 'my-table', icon: <FaTable /> },
-  { id: 7, text: 'map', path: 'fsbo-map', icon: <FaMapMarked /> },
 ]
 
 export default links

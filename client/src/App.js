@@ -14,11 +14,11 @@ import {
 } from './pages/dashboard'
 
 function App() {
-  const { user } = useAppContext()
-  let x = false;
-  if (user && user.email === "sm@sm.com") {
-    x = true;
-  }
+  // const { user } = useAppContext()
+  // let x = false;
+  // if (user && user.email === "sm@sm.com") {
+  //   x = true;
+  // }
   return (
     <BrowserRouter>
       <Routes>
