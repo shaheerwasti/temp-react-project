@@ -31,12 +31,23 @@ const UserSchema = new mongoose.Schema({
     maxlength: 20,
     default: 'lastName',
   },
+  role: {
+    type: String,
+    enum: ['admin', 'user'],
+    default: 'user',
+  },
   location: {
     type: String,
     trim: true,
     maxlength: 20,
     default: 'my city',
   },
+  verificationToken: String,
+  isVerified: {
+    type: Boolean,
+    default: false,
+  },
+  verified: Date,
 })
 
 UserSchema.pre('save', async function () {

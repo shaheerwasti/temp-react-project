@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Register, Landing, Error, ProtectedRoute, } from './pages'
+//import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
+import { Register, Landing, Error, ProtectedRoute, Login, Generator } from './pages'
 
 
 import {
@@ -13,6 +14,8 @@ import {
   FsboMap,
 } from './pages/dashboard'
 
+import Header from './components/Header'
+
 function App() {
   // const { user } = useAppContext()
   // let x = false;
@@ -20,7 +23,8 @@ function App() {
   //   x = true;
   // }
   return (
-    <BrowserRouter>
+    <>
+      <BrowserRouter>
       <Routes>
         <Route
           path='/'
@@ -42,6 +46,21 @@ function App() {
         <Route path='*' element={<Error />} />
       </Routes>
     </BrowserRouter>
+
+      {/* <Router>
+        <div className='container'>
+          <Header></Header>
+          <Routes>
+            <Route path='/' element={<Landing />} />
+            <Route path='/login' element={<Login></Login>} />
+            <Route path='/register' element={<Register />} />
+          </Routes>
+        </div>
+      </Router> */}
+
+
+
+    </>
   )
 }
 

@@ -15,6 +15,19 @@ const Map = () => {
 
     const { geoCodeData } = useAppContext();
     const { data } = geoCodeData
+    const iconBase =
+        "https://maps.google.com/mapfiles/kml/paddle/";
+    const icons = {
+        one: {
+            icon: iconBase + "1.png",
+        },
+        two: {
+            icon: iconBase + "2.png",
+        },
+        three: {
+            icon: iconBase + "3.png",
+        },
+    };
     if (data) {
         //console.log(data.map((item, index) => <Marker key={index} position={item.results[0].geometry.location}> </Marker>));
         return (<GoogleMap zoom={4} mapContainerStyle={containerStyle}
@@ -22,7 +35,7 @@ const Map = () => {
             {data.map((item, index) => {
                 //console.log(item.results.length);
                 if (item.results.length > 0) {
-                    return <Marker key={index} onClick={() => window.open('https://www.google.com/maps/place/' + item.file.addressOfDeceased + "+" + item.file.cityOfDeceased + "+" + item.file.stateOfDeceased + "+" + item.file.zipCodeOfDeceased, '_blank')} position={item.results[0].geometry.location} > </Marker>
+                    return <Marker key={index} onClick={() => window.open('https://www.google.com/maps/place/' + item.file.addressOfDeceased + "+" + item.file.cityOfDeceased + "+" + item.file.stateOfDeceased + "+" + item.file.zipCodeOfDeceased, '_blank')} position={item.results[0].geometry.location} icon={icons.two.icon}  > </Marker>
                 }
             }
             )}

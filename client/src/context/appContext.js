@@ -77,44 +77,6 @@ const initialState = {
   sortOptions: ['latest', 'oldest', 'a-z', 'z-a'],
 }
 
-const sample_data = [
-  {
-    "name": "Page A",
-    "uv": 4000,
-    "pv": 2400
-  },
-  {
-    "name": "Page B",
-    "uv": 3000,
-    "pv": 1398
-  },
-  {
-    "name": "Page C",
-    "uv": 2000,
-    "pv": 9800
-  },
-  {
-    "name": "Page D",
-    "uv": 2780,
-    "pv": 3908
-  },
-  {
-    "name": "Page E",
-    "uv": 1890,
-    "pv": 4800
-  },
-  {
-    "name": "Page F",
-    "uv": 2390,
-    "pv": 3800
-  },
-  {
-    "name": "Page G",
-    "uv": 3490,
-    "pv": 4300
-  }
-]
-
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
@@ -174,16 +136,19 @@ const AppProvider = ({ children }) => {
   }
 
   const setupUser = async ({ currentUser, endPoint, alertText }) => {
+
+
+
     dispatch({ type: SETUP_USER_BEGIN })
     try {
       const { data } = await axios.post(`/api/v1/auth/${endPoint}`, currentUser)
-
+      console.log(data);
       const { user, token, location } = data
       dispatch({
         type: SETUP_USER_SUCCESS,
         payload: { user, token, location, alertText },
       })
-      addUserToLocalStorage({ user, token, location })
+      // addUserToLocalStorage({ user, token, location })
     } catch (error) {
       dispatch({
         type: SETUP_USER_ERROR,
@@ -196,9 +161,15 @@ const AppProvider = ({ children }) => {
     dispatch({ type: TOGGLE_SIDEBAR })
   }
 
-  const logoutUser = () => {
-    dispatch({ type: LOGOUT_USER })
-    removeUserFromLocalStorage()
+  const logoutUser = async () => {
+    try {
+      const { data } = await axios.get(`/api/v1/auth/logout`)
+      console.log(data);
+      dispatch({ type: LOGOUT_USER })
+      // removeUserFromLocalStorage()
+    } catch (error) {
+      console.log(error);
+    }
   }
   const updateUser = async (currentUser) => {
     dispatch({ type: UPDATE_USER_BEGIN })

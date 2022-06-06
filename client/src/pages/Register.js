@@ -3,6 +3,7 @@ import { Logo, FormRow, Alert } from '../components'
 import Wrapper from '../assets/wrappers/RegisterPage'
 import { useAppContext } from '../context/appContext'
 import { useNavigate } from 'react-router-dom'
+import { FaUser } from 'react-icons/fa'
 const initialState = {
   name: '',
   email: '',
@@ -16,6 +17,17 @@ const Register = () => {
   const { user, isLoading, showAlert, displayAlert, setupUser } =
     useAppContext()
 
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   password: '',
+  //   password2: ''
+  // })
+
+  // const { name, email, password, password2 } = formData
+
+
+
   const toggleMember = () => {
     setValues({ ...values, isMember: !values.isMember })
   }
@@ -23,6 +35,9 @@ const Register = () => {
   const handleChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value })
   }
+
+
+
   const onSubmit = (e) => {
     e.preventDefault()
     const { name, email, password, isMember } = values
@@ -46,6 +61,7 @@ const Register = () => {
     }
   }
 
+
   useEffect(() => {
     if (user) {
       setTimeout(() => {
@@ -53,6 +69,14 @@ const Register = () => {
       }, 3000)
     }
   }, [user, navigate])
+
+  // const onChange = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value })
+  // }
+
+  // const onSubmit = (e) => {
+  //   e.preventDefault()
+  // }
 
   return (
     <Wrapper className='full-page'>
@@ -96,5 +120,63 @@ const Register = () => {
       </form>
     </Wrapper>
   )
+
+  // return <>
+  //   <Wrapper className='full-page'>
+  //     <section className='heading'>
+  //       <h1>
+  //         <FaUser></FaUser> Regiser
+  //       </h1>
+  //       <p>Please create an account</p>
+  //     </section>
+
+  //     <section>
+  //       <form onSubmit={onSubmit} className='form'>
+  //         <div className="form-group">
+  //           <FormRow type="text"
+  //             className="form-control"
+  //             id='name'
+  //             name='name'
+  //             value={name}
+  //             placeholder='Enter your name'
+  //             handleChange={onChange} />
+  //         </div>
+  //         <div className="form-group">
+  //           <FormRow type="email"
+  //             className="form-control"
+  //             id='email'
+  //             name='email'
+  //             value={email}
+  //             placeholder='Enter your email'
+  //             handleChange={onChange} />
+  //         </div>
+  //         <div className="form-group">
+  //           <FormRow type="passsword"
+  //             className="form-control"
+  //             id='password'
+  //             name='password'
+  //             value={password}
+  //             placeholder='Enter your password'
+  //             handleChange={onChange} />
+  //         </div>
+  //         <div className="form-group">
+  //           <FormRow type="password"
+  //             className="form-control"
+  //             id='password2'
+  //             name='password2'
+  //             value={password2}
+  //             placeholder='Confirm password'
+  //             handleChange={onChange} />
+  //         </div>
+  //         <div className="form-group">
+
+  //           <button type="submit" className='btn btn-block'>
+  //             Submit
+  //           </button>
+  //         </div>
+  //       </form>
+  //     </section>
+  //   </Wrapper>
+  // </>
 }
 export default Register

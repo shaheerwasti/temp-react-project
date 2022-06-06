@@ -4,7 +4,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 import 'express-async-errors'
 import morgan from 'morgan'
-
+import cookieParse from 'cookie-parser'
 
 
 import { dirname } from 'path'
@@ -45,6 +45,7 @@ if (process.env.NODE_ENV === 'production') {
 // app.use(express.static(path.resolve(__dirname, './client/build')))
 
 app.use(express.json())
+app.use(cookieParse(process.env.JWT_SECRET));
 app.use(helmet())
 app.use(xss())
 app.use(mongoSanitize())
